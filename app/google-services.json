@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471211157710",
+    "project_id": "toko-lang-13492",
+    "storage_bucket": "toko-lang-13492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471211157710:android:347864ebc6c8cb66e0889f",
+        "android_client_info": {
+          "package_name": "com.example.toko_lang_13492"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471211157710-gmegqdouvf0cf807k4f46m3262d1m5c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3cojlVzYnfDD7Y0fSezeJqCugK6b3Fm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471211157710-gmegqdouvf0cf807k4f46m3262d1m5c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

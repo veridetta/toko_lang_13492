@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_action_home"/>
+    <item
+        android:id="@+id/category"
+        android:title="Kategori"
+        android:icon="@drawable/ic_action_category"/>
+    <item
+        android:id="@+id/cart"
+        android:title="Keranjang"
+        android:icon="@drawable/ic_action_chart"/>
+    <item
+        android:id="@+id/add"
+        android:title="Tambah"
+        android:icon="@drawable/ic_action_add"/>
+</menu>
