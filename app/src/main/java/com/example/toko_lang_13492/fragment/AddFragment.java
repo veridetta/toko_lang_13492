@@ -23,6 +23,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link AddFragment#newInstance} factory method to
@@ -108,7 +111,6 @@ public class AddFragment extends Fragment {
         btnTambah = view.findViewById(R.id.btn_tambah);
         firebaseDatabase = FirebaseDatabase.getInstance("https://toko-lang-13492-default-rtdb.firebaseio.com/");
         databaseReference = firebaseDatabase.getReference("produk");
-        produk = new Produk();
 
     }
     void value(){
@@ -126,11 +128,19 @@ public class AddFragment extends Fragment {
         }
     }
     private void addDatatoFirebase(String fNama, String fHarga, String fDes, String fKat, String fGam) {
+        produk = new Produk();
         produk.setNama(fNama);
         produk.setHarga(fHarga);
         produk.setDeskripsi(fDes);
         produk.setKategori(fKat);
         produk.setGambar(fGam);
+        HashMap map = new HashMap();
+        map.put("nama", fNama);
+        map.put("harga", fHarga);
+        map.put("deskripsi", fDes);
+        map.put("gambar", fGam);
+        map.put("kategori", fKat);
+        String newItemKey = databaseReference.push().getKey();
         lyLoading.setVisibility(View.VISIBLE);
         // we are use add value event listener method
         // which is called with database reference.
@@ -140,7 +150,7 @@ public class AddFragment extends Fragment {
                 // inside the method of on Data change we are setting
                 // our object class to our database reference.
                 // data base reference will sends data to firebase.
-                databaseReference.setValue(produk);
+                databaseReference.child(newItemKey).setValue(produk);
                 lyLoading.setVisibility(View.GONE);
                 // after adding this data we are showing toast message.
                 Toast.makeText(getActivity(), "data added", Toast.LENGTH_SHORT).show();

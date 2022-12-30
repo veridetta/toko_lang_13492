@@ -3,6 +3,7 @@ package com.example.toko_lang_13492;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -31,7 +32,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView.setSelectedItemId(R.id.home);
     }
     HomeFragment homeFragment = new HomeFragment();
-    CatFragment catFragment = new CatFragment();
     CartFragment cartFragment = new CartFragment();
     AddFragment addFragment = new AddFragment();
     Fragment fragment = null;
@@ -41,26 +41,33 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()) {
             case R.id.home:
                 fragment = homeFragment;
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).commit();
                 break;
 
-            case R.id.category:
-                fragment = catFragment;
-                break;
 
             case R.id.cart:
                 fragment = cartFragment;
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).detach(fragment).commitNow();
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).attach(fragment).commitNow();
                 break;
             case R.id.add:
                 fragment = addFragment;
                 break;
         }
-        if (fragment != null) {
+        /*if (fragment != null) {
             loadFragment(fragment);
-        }
+        }else{
+            loadFragment(addFragment);
+        }*/
         return true;
     }
     void loadFragment(Fragment fragment) {
         //to attach fragment
-        getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).commit();
+        if (fragment == cartFragment){
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).detach(fragment).attach(fragment).commit();
+        }else{
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).commit();
+        }
+
     }
 }

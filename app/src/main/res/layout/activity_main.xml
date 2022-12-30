@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include layout="@layout/ly_loading"/>
+        android:layout_height="match_parent"
+        android:background="@color/purple_700">
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -21,66 +21,46 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textSize="@dimen/_20sdp"
-                    android:text="Tambah Produk"/>
+                    android:textSize="@dimen/_23sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Toko Lang"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <com.google.android.material.textfield.TextInputLayout
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/nama"
-                            android:hint="Nama Produk"/>
-                    </com.google.android.material.textfield.TextInputLayout>
-                    <androidx.appcompat.widget.AppCompatSpinner
-                        android:id="@+id/sp_kat"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textColor="@color/white"
+                        android:text="Selamat datang di aplikasi Toko Lang. Disini menyediakan kebutuhan muslim dan muslimah"/>
+                    <ImageView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_230sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/home2"/>
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:entries="@array/array_kategori"
-                        android:minHeight="@dimen/_19sdp"
-                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textColor="@color/white"
+                        android:text="Selamat berbelanja di Toko Lang, klik continue untuk halaman selanjutnya"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_continue"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/harga"
-                            android:hint="Harga Produk"/>
-                    </com.google.android.material.textfield.TextInputLayout>
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/gambar"
-                            android:hint="Url Gambar Produk"/>
-                    </com.google.android.material.textfield.TextInputLayout>
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/des"
-                            android:minLines="3"
-                            android:hint="Deskripsi Produk"/>
-                    </com.google.android.material.textfield.TextInputLayout>
-                    <Button
-                        android:id="@+id/btn_tambah"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Tambah Produk"/>
+                        android:paddingLeft="@dimen/_45sdp"
+                        android:paddingRight="@dimen/_45sdp"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:backgroundTint="@color/grey"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="Continue"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

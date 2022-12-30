@@ -36,13 +36,19 @@
                             android:id="@+id/nama"
                             android:hint="Nama Produk"/>
                     </com.google.android.material.textfield.TextInputLayout>
-                    <androidx.appcompat.widget.AppCompatSpinner
-                        android:id="@+id/sp_kat"
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:entries="@array/array_kategori"
-                        android:minHeight="@dimen/_19sdp"
-                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+                        android:paddingTop="@dimen/_6sdp"
+                        android:text="Kategori : "/>
+                        <Spinner
+                            android:id="@+id/sp_kat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/array_kategori"
+                            android:minHeight="@dimen/_19sdp"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:spinnerMode="dropdown"/>
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

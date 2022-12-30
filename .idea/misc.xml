@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/drawable/bg_spinner.xml" value="0.1" />
+        <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/activity_detail.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/fragment_add.xml" value="0.16145833333333334" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/fragment_cart.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/ly_cart.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/ly_loading.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/layout/ly_produk.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/smile/AndroidStudioProjects/toko_lang_13492/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />

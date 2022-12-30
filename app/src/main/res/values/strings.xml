@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">toko_ lang_13492</string>
     <string-array name="array_kategori">
-        <item>Baju Muslim</item>
-        <item>Muslimah</item>
+        <item>Pria</item>
+        <item>Wanita</item>
         <item>Anak-anak</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
