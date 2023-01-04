@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
         Button btnKon = findViewById(R.id.btn_continue);
         btnKon.setOnClickListener(new View.OnClickListener() {
             @Override

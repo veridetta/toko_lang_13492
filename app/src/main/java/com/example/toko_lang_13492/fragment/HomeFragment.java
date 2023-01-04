@@ -34,7 +34,7 @@ import java.util.zip.Inflater;
  */
 public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
-    ProdukAdapter produkAdapter, priaAdapter;
+    ProdukAdapter produkAdapter;
     DatabaseReference mbase;
     RelativeLayout lyLoading;
     String path = "";

@@ -52,6 +52,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
                 break;
             case R.id.add:
                 fragment = addFragment;
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fragment).commit();
                 break;
         }
         /*if (fragment != null) {
